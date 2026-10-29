@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "projectRoot": ".",
+  "artifactsDir": ".pixso-artifacts",
+  "pixso": {
+    "transport": "http",
+    "url": "http://127.0.0.1:3667/mcp",
+    "nodeIds": [],
+    "concurrency": 4,
+    "chunkChars": 24000,
+    "timeoutMs": 120000
+  },
+  "gigacode": {
+    "command": "gigacode",
+    "args": [],
+    "concurrency": 4,
+    "timeoutMs": 900000,
+    "retries": 1
+  },
+  "generation": {
+    "outputDir": "src/pixso-generated",
+    "cssFiles": [],
+    "componentFiles": [],
+    "data": { "mockFiles": [] },
+    "maxNodesPerTask": 180,
+    "maxChunkBytes": 24576
+  },
+  "validation": {
+    "mode": "pixel-perfect",
+    "browserChannel": "chrome",
+    "maxPixelDiffRatio": 0,
+    "geometryTolerancePx": 0.01,
+    "commands": []
+  },
+  "versioning": { "screenChangelog": false }
+}

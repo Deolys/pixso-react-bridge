@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.pixso-artifacts/
+output/
+docs/evidence/
+*.tgz
+.env
+.env.*
+!.env.example

@@ -1,0 +1,18 @@
+{
+  "name": "pixso-react-bridge",
+  "version": "1.2.0",
+  "description": "Local Node MCP bridge for complete Pixso capture and verified React transfer through GigaCode CLI",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Pixso React Bridge",
+    "shortDescription": "Capture Pixso and verify React transfer.",
+    "longDescription": "Versioned complete design artifacts, parallel GigaCode workers, React/TypeScript/CSS and local visual acceptance.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Pixso React Bridge."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "pixso-react-bridge",
+  "version": "1.2.0",
+  "description": "Versioned, completeness-checked Pixso to React pipeline for GigaCode CLI",
+  "type": "module",
+  "bin": {
+    "pixso-react": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "files": [
+    "dist",
+    "src",
+    "scripts",
+    "tests",
+    "skills",
+    "docs",
+    "examples",
+    "README.md",
+    "GIGACODE.md",
+    "gigacode-extension.json",
+    "agents",
+    ".codex-plugin",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && tsx --test tests/*.test.ts",
+    "dev": "tsx src/cli.ts",
+    "demo": "tsx scripts/demo.ts",
+    "demo:data": "tsx scripts/demo-data.ts",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "pixelmatch": "^7.1.0",
+    "playwright": "^1.58.2",
+    "pngjs": "^7.0.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.7",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "@types/pngjs": "^6.0.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "esbuild": "^0.28.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tsx": "^4.21.0"
+  },
+  "license": "MIT"
+}

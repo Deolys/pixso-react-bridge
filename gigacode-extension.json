@@ -1,0 +1,7 @@
+{
+  "name": "pixso-react-bridge",
+  "version": "1.2.0",
+  "description": "Pixso design capture, versioned evidence and parallel React implementation through a local Node MCP runtime",
+  "skills": "skills",
+  "agents": "agents"
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "projectRoot": ".",
+  "artifactsDir": ".pixso-artifacts",
+  "pixso": {
+    "transport": "http",
+    "url": "http://127.0.0.1:3667/mcp",
+    "nodeIds": ["12:34"]
+  },
+  "gigacode": {
+    "command": "gigacode",
+    "args": [],
+    "concurrency": 4,
+    "timeoutMs": 900000,
+    "retries": 1
+  },
+  "generation": {
+    "outputDir": "src/pixso-generated",
+    "cssFiles": ["src/styles/global.css"],
+    "componentFiles": ["src/ui/Button.tsx"],
+    "data": {
+      "mockFiles": ["src/mocks/scenarios/orders.ts", "src/mocks/handlers.ts"],
+      "setupFile": "src/mocks/bootstrap.ts",
+      "instructions": "Использовать существующие сценарии заказов и data hooks проекта. Значения примера хранить в сценарии, передавать через API/props; не помещать бизнес-значения в JSX."
+    },
+    "maxNodesPerTask": 180,
+    "maxChunkBytes": 24576
+  },
+  "validation": {
+    "mode": "pixel-perfect",
+    "setupFile": "src/preview/pixso-setup.tsx",
+    "browserChannel": "chrome",
+    "maxPixelDiffRatio": 0,
+    "geometryTolerancePx": 0.01,
+    "commands": []
+  },
+  "versioning": { "screenChangelog": true }
+}
